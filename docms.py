@@ -1,6 +1,7 @@
 #!/usr/bin/python36
 
 print("content-type: text/html")
+print("This is hadoop cluster. ")
 print()
 
 import cgi
@@ -9,8 +10,6 @@ import cgi
 
 slave_nums=cgi.FieldStorage().getvalue('slave_num')
 sn=int(slave_nums)
-#print(slave_nums)
-#slave_nums=3(int)
 i=1
 print("Enter IPs of slaves <br>")
 while sn !=0:
@@ -22,7 +21,7 @@ while sn !=0:
 	i=i+1
 	
 print("<br>Enter ip of Master : <input name='mip'>")
-print("<br>Enter ip of Clinet : <input name='cip'>")
+print("<br>Enter ip of Client : <input name='cip'>")
 print("<input type='submit' value='submit'>")
 
 
