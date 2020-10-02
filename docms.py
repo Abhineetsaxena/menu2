@@ -6,11 +6,10 @@ print()
 import cgi
 
 
-
+print("This is master slave hadoop structure")
 slave_nums=cgi.FieldStorage().getvalue('slave_num')
 sn=int(slave_nums)
-#print(slave_nums)
-#slave_nums=3(int)
+
 i=1
 print("Enter IPs of slaves <br>")
 while sn !=0:
